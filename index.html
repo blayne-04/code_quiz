@@ -10,14 +10,24 @@
 </head>
 <body>
     <div class = "topbar">
-        <p id = "timer"></p>
-
+        <button id = "viewhs">View Highscores</button>
+        <p id = "timer">Time : 60</p>
     </div>
-    <div class = "question"><h2 id = "question">Common DataTypes in JS don't include:</h2></div>
-    <div class = "answers">
+    <div class = "startmenu">
+        <h1>Coding Quiz Challenge!</h1>
+        <p>you have 60 seconds to answer as many questions as you can correctly, incorrect answers will reduce the amount of time left by 5 seconds, press start to begin, GOODLUCK!</p>
+        <button id="startbutton">START</button>
+    </div>
+    <div class="container">
+        <div class = "question">
+            <h2 id = "question">Common datatypes in javascript dont include which of the following:</h2>
+        </div>
+        <div class = "answers">
         <button>strings</button>
         <button>booleans</button>
         <button>arrays</button>
+        </div>
+        <div id = "indicator"></div>
     </div>
     <script src = "assets/script.js"></script>
 </body>
