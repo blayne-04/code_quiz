@@ -1,4 +1,10 @@
 add the basic html and css styling needed first
+**click events
+add click event listeners for all buttons
+make the leaderboard button functional by applying a hide class to everything else and removing it from leaderboard
+make the start button functional by applying a hide class to everything besides the questions and removing it from questions
+make the form submit button functional by adding the string submitted to local data, adding that string to a paragraph element and appending it to the page, as well as adding the hidden class to the endcard and taking it away from the leaderboard
+
 store questions and answers in javascript variables
 fill in text in html using a for loop with a javascript array
-on button click check if false and cycle to enxt
+on button click check if false and cycle to next question

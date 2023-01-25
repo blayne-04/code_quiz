@@ -9,16 +9,16 @@
     <title>Coding Quiz!</title>
 </head>
 <body>
-    <div class = "topbar">
-        <button id = "viewhs">View Highscores</button>
-        <p id = "timer"></p>
-    </div>
     <div class = "startmenu">
         <h1>Coding Quiz Challenge!</h1>
         <p>you have 60 seconds to answer as many questions as you can correctly, incorrect answers will reduce the amount of time left by 5 seconds, press start to begin, GOODLUCK!</p>
-        <button id="startbutton">START</button>
+        <div class ="start_lb">
+        <button class = "smbuttons" id="startbutton">START</button>
+        <button class = "smbuttons" id = "viewhs">LEADERBOARD</button>
+        </div>
     </div>
     <div class="container hide">
+        <p id = "timer">filler</p>
         <div class = "question">
             <h2 id = "question">Common datatypes in javascript dont include which of the following:</h2>
         </div>
@@ -29,9 +29,9 @@
         </div>
         <div id = "indicator"></div>
     </div>
-    <div class = "endcard">
+    <div class = "endcard hide">
         <h1>All Done!</h1>
-        <p>Your Final Score is 22</p>
+        <p id = "score"></p>
         <div class = "initialInput">
             <label for = "initials">Enter Initials: </label>
             <input type = "text" id ="initials">
