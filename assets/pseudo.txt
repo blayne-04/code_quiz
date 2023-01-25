@@ -1,1 +1,4 @@
 add the basic html and css styling needed first
+store questions and answers in javascript variables
+fill in text in html using a for loop with a javascript array
+on button click check if false and cycle to enxt

@@ -4,10 +4,12 @@
 :root{
     --background: #FFF;
     --bubbles: #1D1128;
+    --bubbles_highlighted: #44275f;
+    --bright: rgba(114, 82, 145, 0.842);
     --text: #D6D6D6;
     --highlighted: #FFF;
 }
-/*  */
+/*  sets font family and background color of the page*/
 *{
     background-color: var(--background);
     font-family: 'Oxygen', sans-serif;
@@ -29,8 +31,10 @@
 /* sets the styling of the view highscore button when hovering */
 #viewhs:hover{
     color: var(--highlighted);
-    cursor: grab;
+    cursor: pointer;
+    background-color: var(--bubbles_highlighted)
 }
+/* sets the positioning for the startmenu items */
 .startmenu{
     display: flex;
     flex-direction: column;
@@ -40,7 +44,7 @@
     padding: 50px;
     margin: 40px;
 }
-/*  */
+/*  sets the size and margin of the start menu header*/
 .startmenu h1{
     font-size: 60px;
     margin: 30px;
@@ -48,38 +52,39 @@
 /* font size for startmenu prompt */
 .startmenu p{
     font-size: 40px;
+    margin-bottom: 100px;
 }
-
+/* sets the styling for the start button */
 #startbutton{
     border-radius: 30px;
     background-color: var(--bubbles);
     color: var(--text);
     padding: 40px;
-    margin-top: 100px;
     font-size: 30px;
     width: 30vw;
 }
-
+/* changes the styling of the start button when hovered */
 #startbutton:hover{
     color: var(--highlighted);
-    cursor: grab;
+    cursor: pointer;
+    background-color: var(--bubbles_highlighted)
 }
-
 /* aligns the questions and answers to the middle of the screen*/
 .container{
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 75vh;
     width: 100vw;
 }
-/* changes the styling for the question */
+/* changes the positioning for the question */
 .question{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
+/* sets the font size of the question */
 #question{
     font-size: 40px;
 }
@@ -103,9 +108,10 @@
 /* sets the styling of the answer button youre hovering over */
 .answers button:hover{
     color: var(--highlighted);
-    cursor: grab;
+    cursor: pointer;
+    background-color: var(--bubbles_highlighted)
 }
-
+/* sets the styling for the you were right/wrong indicator */
 #indicator{
     display: flex;
     justify-content: center;
@@ -113,4 +119,97 @@
     width: 50vw;
     font-size: 40px;
     color: gray;
+}
+
+/* positioning the container for the endcard */
+.endcard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40vw;
+}
+/* font size for endcard header */
+.endcard h1{
+    font-size: 50px;
+}
+/* font size for endcard final score */
+.endcard p{
+    font-size: 30px;
+}
+/* font size for  initial input label, input box and submit button*/
+.initialInput{
+    font-size: 30px;
+}
+/* border styling for input box */
+.initialInput input{
+    border-style: dashed;
+    border-radius: 5px;
+}
+/* styling for submit button */
+#submitButton{
+    background-color: var(--bubbles);
+    color: var(--text);
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+/* styling for submit button while hovered */
+#submitButton:hover{
+    background-color: var(--bubbles_highlighted);
+    color: var(--highlighted);
+    cursor: pointer;
+}
+
+/* positioning the leaderboard container */
+.leaderboard{
+    display: flex;
+    font-size: 45px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    height: 75vh;
+    margin-left: 25vw;
+}
+/* sets the width of the scores*/
+.scores{
+    width: 50%;
+}
+/* sets the styling for the scores */
+.scores p{
+    font-size: 30px;
+    background-color: var(--bright);
+    width: 100%;
+    padding: 0px 20px;
+}
+/* sets the styling for the back button */
+#back{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: var(--bubbles);
+    color: var(--text);
+}
+/* sets the styling when hovered over the back button */
+#back:hover{
+    background-color: var(--bubbles_highlighted);
+    color: var(--highlighted);
+    cursor: pointer;
+}
+/* sets styling for the clear button */
+#clearHS{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: var(--bubbles);
+    color: var(--text)
+}
+/* sets styling for the clear button when hovered */
+#clearHS:hover{
+    background-color: var(--bubbles_highlighted);
+    color: var(--highlighted);
+    cursor: pointer;
+}
+/* class to toggle hide */
+.hide{
+    display:none;
 }
