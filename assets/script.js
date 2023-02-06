@@ -98,7 +98,7 @@ function displayScores(){
     {
       question: 'How many Infinity Stones are there?',
       answers: [
-        {text: '5', correct: true},
+        {text: '5', correct: false},
         {text: '6', correct: true},
         {text: '10', correct: false},
       ]
@@ -193,6 +193,7 @@ console.log(correctSelect)
     score++
   }else{
     $('#indicator').text('incorrect')
+    timeLeft -= 5 
   }
   setNextQuestion()
 }
